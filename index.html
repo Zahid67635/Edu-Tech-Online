@@ -11,9 +11,11 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/dc27b96565.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- nav section  -->
     <header>
         <nav class="navbar navbar-expand-lg bg-light nav-height">
             <div class="container">
@@ -50,8 +52,8 @@
     </header>
     <main>
         <!-- slider -->
-        <section>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+        <section class="container sec-gap">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -62,33 +64,33 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item slide-height active" data-bs-interval="10000">
-                        <img src="./images/cover/cover-1.png" class="d-block w-100 " alt="...">
+                        <img src="./images/cover/cover-1.png" class="d-block w-100 slide-height" alt="...">
 
                         <div class="carousel-caption text-white d-none d-md-block ">
                             <div class="my-5">
                                 <h5 class="display-6 fw-bold">First slide label</h5>
                                 <p class="fs-3">Some representative placeholder content for the first slide.</p>
-                                <button class="btn btn-info text-white fw-bold">Get Started</button>
+                                <button class="btn btn-info text-white fw-bold btn-lg">Get Started</button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item slide-height" data-bs-interval="2000">
-                        <img src="./images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+                        <img src="./images/cover/cover-2.jpg" class="d-block w-100 slide-height" alt="...">
                         <div class="carousel-caption text-white d-none d-md-block">
                             <div class="my-5">
                                 <h5 class="display-6 fw-bold">Second slide label</h5>
                                 <p class="fs-3">Some representative placeholder content for the second slide.</p>
-                                <button class="btn btn-info text-white fw-bold">Get Started</button>
+                                <button class="btn btn-info btn-lg text-white fw-bold ">Get Started</button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item slide-height">
-                        <img src="./images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+                        <img src="./images/cover/cover-3.jpg" class="d-block w-100 slide-height" alt="...">
                         <div class="carousel-caption text-white d-none d-md-block">
                             <div class="my-5">
                                 <h5 class="display-6 fw-bold">Third slide label</h5>
                                 <p class="fs-3">Some representative placeholder content for the third slide.</p>
-                                <button class="btn btn-info text-white fw-bold">Get Started</button>
+                                <button class="btn btn-info text-white fw-bold btn-lg">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -108,7 +110,7 @@
         </section>
 
         <!-- course section  -->
-        <section class="container my-5">
+        <section class="container sec-gap my-5">
             <div class=" d-flex justify-content-center">
                 <div>
                     <h1 style="text-align:center;">Discover Our Popular
@@ -118,7 +120,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-lg-6">
                     <div class="card mb-3 my-5" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -165,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-12 col-lg-6">
                     <div class="card mb-3 my-5" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -220,13 +222,12 @@
         </section>
 
         <!-- popularity -->
-
-        <section class="container my-5 ">
-            <div class="d-flex">
-                <div>
-                    <img src="./images/working.png" class=" w-40" alt="">
+        <section class="container sec-gap my-5 ">
+            <div class="d-flex row">
+                <div class="col-md-5">
+                    <img src="./images/working.png" class="img-fluid" alt="">
                 </div>
-                <div class=" bg-info bg-opacity-10" style="padding:5%;">
+                <div class=" bg-info bg-opacity-10 col-md-7" style="padding:5% 5% 0% 5%">
                     <div>
                         <h1>Explore The elearning
                             Institute</h1><br>
@@ -257,10 +258,87 @@
                 </div>
             </div>
         </section>
+        <!-- modal section  -->
+        <section class="container my-5">
+            <div class="row bg-info rounded">
+                <div class=" col-md-12 col-lg-6 w-50 p-5 text-white">
+                    <h1>Ready to join?</h1>
+                    <br>
+                    <p>It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout.</p>
+                </div>
+                <div class="col-lg-4 mx-5 p-5 d-flex justify-content-center align-items-center">
+                    <div>
+                        <button type="button" class="batan rounded" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Please Register</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                                <input type="email" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Feedback:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Frequently asked question -->
 
-        <section class="container my-5">
+        <section class="container sec-gap my-5">
             <div class="text-center my-5">
                 <h1>Frequently Asked Questions</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -272,7 +350,7 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is the difference between flexbox and grid?
+                                <b>What is the difference between flexbox and grid?</b>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -288,7 +366,7 @@
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What is the differences between Bootstrap and Tailwind?
+                                <b>What is the differences between Bootstrap and Tailwind?</b>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -310,7 +388,7 @@
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What is CSS Box Model?
+                                <b>What is CSS Box Model?</b>
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -336,7 +414,7 @@
                         <h2 class="accordion-header" id="headingfour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                What is semantic tag?
+                                <b>What is semantic tag?</b>
                             </button>
                         </h2>
                         <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
@@ -358,6 +436,39 @@
                 </div>
             </div>
         </section>
+
+        <!-- company logos -->
+
+        <section class="container sec-gap my-5 d-none d-lg-block d-print-block">
+            <h1 class="text-center"> Trusted by over 800+ companies</h1>
+            <div class="d-flex text-center my-4">
+                <img src="./images/company/company-1.png" class="mx-4" alt="">
+                <img src="./images/company/company-2.png" class="mx-4" alt="">
+                <img src="./images/company/company-3.png" class="mx-4" alt="">
+                <img src="./images/company/company-4.png" class="mx-4" alt="">
+                <img src="./images/company/company-5.png" class="mx-4" alt="">
+                <img src="./images/company/company-6.png" class="mx-4" alt="">
+            </div>
+
+        </section>
+
+        <footer class="foot text-white ">
+            <div class="text-center mt-3">
+                <h2> Edu - Tech</h2>
+                <address>
+                    Office 41, Zawaya Buildin, Ghala Muscat,
+                    Sultanate of Oman
+                </address>
+                <a href="https://web.facebook.com/" target="_blank" class="fs-3"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="fs-3 mx-4" target="_blank"
+                    href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BMVC%2FcEPMTVG4ZSaDxzN5Rg%3D%3D"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a class="fs-3" target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </footer>
 
     </main>
 
