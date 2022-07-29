@@ -7,9 +7,16 @@
     margin-bottom: 150px;
 }
 
+
+/* slider section  */
 .slide-height {
     height: 80vh;
 }
+
+.slider-img {
+    filter: brightness(60%);
+}
+
 
 /* modal btn  */
 .batan {
